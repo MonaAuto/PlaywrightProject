@@ -8,24 +8,24 @@ await page.waitForTimeout(4000);
 await page.locator("//a[normalize-space()='Signup / Login']").click();
 await page.waitForTimeout(1000);
 
-await page.getByPlaceholder('Name').fill('Mona5');
+await page.getByPlaceholder('Name').fill('Mona35535');
 
 
-await page.locator("//input[@placeholder='Name']").fill('Mona3');
+//await page.locator("//input[@placeholder='Name']").fill('Mona3333');
 
 //await page.getByText('Signup').nth(2).click();
 //await page.locator("input[placeholder='Name']").fill('Mona3');
 
-await page.getByAltText('Website for automation practice').click();
-
-await page.waitForTimeout(1000);
-
-//await page.locator('(//input[@placeholder="Email Address"])[1]').fill("m5s0213@yahoo.com");
+//await page.getByAltText('Website for automation practice').click();
 
 //await page.waitForTimeout(1000);
 
+await page.locator('(//input[@data-qa="signup-email"])').fill("m5s02222213@yahoo.com");
 
-/*
+await page.waitForTimeout(1000);
+
+
+
 await page.locator("//button[normalize-space()='Signup']").click();
 
 await page.locator("//input[@id='id_gender2']").click();
@@ -78,11 +78,6 @@ await page.waitForTimeout(500);
 
 //await page.locator("/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/form[1]/button[1]']").click();
 // 58 | await page.locator("//button[@data-qa='create-account']").click();
-//59 | await page.waitForTimeout(4000); */
+//59 | await page.waitForTimeout(4000); 
 
 });
-
-
-
-
-

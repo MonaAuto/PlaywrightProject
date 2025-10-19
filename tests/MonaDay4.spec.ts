@@ -8,10 +8,10 @@ await page.waitForTimeout(4000);
 await page.locator("//a[normalize-space()='Signup / Login']").click();
 await page.waitForTimeout(1000);
 
-await page.getByPlaceholder('Name').fill('Mona5');
+await page.getByPlaceholder('Name').fill('Mona388035');
 
 
-await page.locator("//input[@placeholder='Name']").fill('Mona3');
+//await page.locator("//input[@placeholder='Name']").fill('Mona3333');
 
 //await page.getByText('Signup').nth(2).click();
 //await page.locator("input[placeholder='Name']").fill('Mona3');
@@ -20,12 +20,10 @@ await page.locator("//input[@placeholder='Name']").fill('Mona3');
 
 //await page.waitForTimeout(1000);
 
-//await page.locator('(//input[@placeholder="Email Address"])[1]').fill("m5s0213@yahoo.com");
+await page.locator('(//input[@data-qa="signup-email"])').fill("m5s028813@yahoo.com");
 
-//await page.waitForTimeout(1000);
+await page.waitForTimeout(1000);
 
-
-/*
 await page.locator("//button[normalize-space()='Signup']").click();
 
 await page.locator("//input[@id='id_gender2']").click();
@@ -38,6 +36,12 @@ await page.waitForTimeout(1000);
 
 await page.locator("//input[@id='password']").fill('123123');
 await page.waitForTimeout(1000);
+
+//dropdownlist ***
+await page.locator("#days").selectOption("8");
+await page.locator("#months").selectOption({label:'March'});
+await page.locator("#years").selectOption("1998");
+
 
 await page.locator("//input [@id='optin']").click();
 
@@ -59,6 +63,9 @@ await page.waitForTimeout(1000);
 await page.locator("//input[@data-qa='address2']").fill('Adress mona 2');
 await page.waitForTimeout(1000);
 
+await page.locator("#country").selectOption("Canada");
+await page.waitForTimeout(1000);
+
 await page.locator("//input[@data-qa='state']").fill('Central Region');
 await page.waitForTimeout(1000);
 
@@ -74,10 +81,8 @@ await page.waitForTimeout(1000);
 await page.locator("//button[@data-qa='create-account']").click();
 await page.waitForTimeout(500);
 
-
-
 //await page.locator("/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/form[1]/button[1]']").click();
-// 58 | await page.locator("//button[@data-qa='create-account']").click();
-//59 | await page.waitForTimeout(4000); */
+// await page.locator("//button[@data-qa='create-account']").click();
+//59 | await page.waitForTimeout(4000); 
 
 });

@@ -1,16 +1,22 @@
 import {test, expect} from '@playwright/test';
 
-test('try_signup', async ({page}) => {
+test('  ', async ({page}) => {
 
-await page.goto('https://automationexercise.com//');
+await page.goto('https://automationexercise.com/');
 await page.waitForTimeout(4000);
 
 await page.locator("//a[normalize-space()='Signup / Login']").click();
 
-await page.locator("//input[@placeholder='Name']").fill('Mona3');
-await page.locator("//input[@data-qa='signup-email']").fill('m5s0213@yahoo.com');
+await page.locator("//input[@placeholder='Name']").fill('Mona3133');
+
+await page.waitForTimeout(1000);
+
+
+await page.locator("//input[@data-qa='signup-email']").fill('m5s0212213@yahoo.com');
 
 await page.locator("//button[normalize-space()='Signup']").click();
+await page.waitForTimeout(1000);
+
 
 await page.locator("//input[@id='id_gender2']").click();
 await page.waitForTimeout(1000);
